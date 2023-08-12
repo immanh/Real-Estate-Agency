@@ -1,0 +1,21 @@
+
+/* Font-family */
+
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+}
+
+/* Initial step:
+1. Reset CSS -> OK
+2. font-family: font-weight -> OK
+3. font-size -> OK
+4. Các thành phần có thể tái sử dụng: button, icon,....
+ */
+
