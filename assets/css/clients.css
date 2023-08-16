@@ -1,0 +1,21 @@
+/* Clients */
+.clients {
+    margin-top: 174px;
+}
+
+.evaluation .row + .row {
+    margin-top: 23px;
+}
+
+.evaluation__desc {
+    color: #7d8589;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 96px;
+}
+.evaluation__partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

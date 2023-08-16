@@ -1,0 +1,62 @@
+.achievements .contents {
+    padding: 82px 24px 101px;
+    padding-top: 82px;
+    padding-left: 24px;
+}
+.achievements__heading {
+    display: flex;
+    align-items: center;
+}
+
+.achievements__heading-img {
+    width: 710px;
+    height: 537px;
+}
+
+.achievements__heading-info {
+    position: relative;
+    margin-left: 55px;
+}
+
+.achievements__heading-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.28;
+    width: 269px;
+    height: 142px;
+}
+.achievements__heading-title::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background: #000339;
+}
+.achievements__heading-desc {
+    color: #5a6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+    width: 309px;
+}
+.achievements .contents .row {
+    margin: 0 24px;
+}
+.achievements__revenue-quatity {
+    margin-bottom: 22px;
+    margin-top: 110px;
+    color: #000;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.achievements__revenue-type {
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-weight: 500;
+}

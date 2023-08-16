@@ -1,30 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="view-port" content="width=device-width, intial-scale=1.0">
-    <title>Real Estate</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
-</head>
-<body>
-    <div class="app">
-        <header class="header">
-            <img src="./assets/img/logo.png" alt="Logo" class="logo">
-            </nav>
-            <div class="auth">
-                <button class="btn">Sign up</button>
-                <button class="btn">Sign up</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="view-port"
+            content="width=device-width, intial-scale=1.0"
+        />
+        <title>Real Estate</title>
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/reset.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/fonts/stylesheet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/global-styles.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/header.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/clients.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/guides.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/properties.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/achievements.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/subscribe.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/footer.css"
+        />
+    </head>
+    <body>
+        <main class="app">
+            <!-- Header -->
+            <header class="header">
+                <nav class="nav-bar page-width">
+                    <img
+                        src="./assets/img/logo.svg"
+                        alt="Besnik."
+                        class="logo"
+                    />
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#!">Home</a></li>
+                        <li class="nav-item"><a href="#!">Features</a></li>
+                        <li class="nav-item"><a href="#!">Services</a></li>
+                        <li class="nav-item"><a href="#!">Resources</a></li>
+                        <li class="nav-item"><a href="#!">Contact</a></li>
+                    </ul>
+                    <div class="auth">
+                        <a class="btn">Sign in</a>
+                        <a class="btn auth__sign-up">Sign up</a>
+                    </div>
+                </nav>
+                <div class="header-content page-width">
+                    <div class="introduce">
+                        <p class="introduce__welcome">Welcome to Besnik Agency</p>
+                        <h1 class="introduce__title">Discover a place you'll love to live.</h1>
+                        <p class="introduce__description">
+                            Get the best real estate deals first, before they hit the mass market! hot foreclosure deals
+                            with one simple search.
+                        </p>
+                        <a class="btn introduce__more">More About Us</a>
+                    </div>
+                    <img
+                        class="house-image"
+                        src="./assets/img/house-vector.svg"
+                        alt="Discover a place you'll love to live."
+                    />
+                </div>
+            </header>
+            <div class="clients">
+                <div class="evaluation page-width">
+                    <div class="row">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="Besnik."
+                            class="logo"
+                        />
+                        <div class="evaluation__stars">
+                            <svg
+                                class="evaluation__stars-item"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="116"
+                                height="19"
+                                viewBox="0 0 116 19"
+                                fill="none"
+                            >
+                                <path
+                                    d="M20.2708 7.15784C20.2009 6.94823 20.0148 6.79547 19.7908 6.76382L13.4977 5.87364L10.6833 0.32269C10.5831 0.125085 10.3764 0 10.15 0C9.92364 0 9.71691 0.125085 9.61672 0.32269L6.80217 5.87364L0.509197 6.76382C0.285224 6.79547 0.0990758 6.94823 0.0291362 7.1578C-0.0408429 7.3674 0.0175193 7.59747 0.179641 7.75127L4.73316 12.0721L3.65838 18.1732C3.62008 18.3905 3.71183 18.6099 3.89496 18.7395C3.99856 18.8127 4.12127 18.85 4.24458 18.85C4.33926 18.85 4.43426 18.828 4.52125 18.7835L10.15 15.9029L15.7785 18.7835C15.9789 18.886 16.2217 18.8689 16.4048 18.7394C16.588 18.6099 16.6797 18.3904 16.6415 18.1732L15.5663 12.0721L20.1204 7.75123C20.2825 7.59747 20.3409 7.3674 20.2708 7.15784Z"
+                                    fill="#FFCA56"
+                                />
+                                <path
+                                    d="M44.1959 7.15784C44.126 6.94823 43.9399 6.79547 43.7159 6.76382L37.4228 5.87364L34.6083 0.32269C34.5082 0.125085 34.3014 0 34.0751 0C33.8487 0 33.642 0.125085 33.5418 0.32269L30.7272 5.87364L24.4342 6.76382C24.2103 6.79547 24.0241 6.94823 23.9542 7.1578C23.8842 7.3674 23.9426 7.59747 24.1047 7.75127L28.6582 12.0721L27.5834 18.1732C27.5451 18.3905 27.6369 18.6099 27.82 18.7395C27.9236 18.8127 28.0463 18.85 28.1696 18.85C28.2643 18.85 28.3593 18.828 28.4463 18.7835L34.075 15.9029L39.7035 18.7835C39.904 18.886 40.1467 18.8689 40.3299 18.7394C40.513 18.6099 40.6048 18.3904 40.5665 18.1732L39.4914 12.0721L44.0454 7.75123C44.2075 7.59747 44.2659 7.3674 44.1959 7.15784Z"
+                                    fill="#FFCA56"
+                                />
+                                <path
+                                    d="M68.1208 7.15784C68.0509 6.94823 67.8648 6.79547 67.6408 6.76382L61.3477 5.87364L58.5333 0.32269C58.4331 0.125085 58.2264 0 58 0C57.7736 0 57.5669 0.125085 57.4667 0.32269L54.6521 5.87364L48.3592 6.76382C48.1352 6.79547 47.9491 6.94823 47.8791 7.1578C47.8091 7.3674 47.8675 7.59747 48.0296 7.75127L52.5831 12.0721L51.5084 18.1732C51.4701 18.3905 51.5618 18.6099 51.7449 18.7395C51.8485 18.8127 51.9712 18.85 52.0946 18.85C52.1892 18.85 52.2842 18.828 52.3712 18.7835L58 15.9029L63.6285 18.7835C63.8289 18.886 64.0717 18.8689 64.2548 18.7394C64.4379 18.6099 64.5297 18.3904 64.4915 18.1732L63.4163 12.0721L67.9704 7.75123C68.1324 7.59747 68.1908 7.3674 68.1208 7.15784Z"
+                                    fill="#FFCA56"
+                                />
+                                <path
+                                    d="M92.0459 7.15784C91.9759 6.94823 91.7899 6.79547 91.5658 6.76382L85.2728 5.87364L82.4583 0.32269C82.3582 0.125085 82.1514 0 81.9251 0C81.6987 0 81.4919 0.125085 81.3917 0.32269L78.5772 5.87364L72.2842 6.76382C72.0602 6.79547 71.8741 6.94823 71.8042 7.1578C71.7342 7.3674 71.7925 7.59747 71.9547 7.75127L76.5082 12.0721L75.4334 18.1732C75.3951 18.3905 75.4869 18.6099 75.67 18.7395C75.7736 18.8127 75.8963 18.85 76.0196 18.85C76.1143 18.85 76.2093 18.828 76.2963 18.7835L81.925 15.9029L87.5535 18.7835C87.7539 18.886 87.9967 18.8689 88.1798 18.7394C88.363 18.6099 88.4548 18.3904 88.4165 18.1732L87.3414 12.0721L91.8954 7.75123C92.0575 7.59747 92.1159 7.3674 92.0459 7.15784Z"
+                                    fill="#FFCA56"
+                                />
+                                <path
+                                    d="M115.971 7.15784C115.901 6.94823 115.715 6.79547 115.491 6.76382L109.198 5.87364L106.383 0.32269C106.283 0.125085 106.076 0 105.85 0C105.624 0 105.417 0.125085 105.317 0.32269L102.502 5.87364L96.2091 6.76382C95.9852 6.79547 95.799 6.94823 95.7291 7.1578C95.6591 7.3674 95.7175 7.59747 95.8796 7.75127L100.433 12.0721L99.3583 18.1732C99.32 18.3905 99.4118 18.6099 99.5949 18.7395C99.6985 18.8127 99.8212 18.85 99.9445 18.85C100.039 18.85 100.134 18.828 100.221 18.7835L105.85 15.9029L111.478 18.7835C111.679 18.886 111.922 18.8689 112.105 18.7394C112.288 18.6099 112.38 18.3904 112.341 18.1732L111.266 12.0721L115.82 7.75123C115.982 7.59747 116.041 7.3674 115.971 7.15784Z"
+                                    fill="#FFCA56"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="evaluation__desc">More than 45,000+ companies trust besnik</p>
+                        <p class="evaluation__desc">5 Star Ratings (2k+ Review)</p>
+                    </div>
+                    <div class="evaluation__partner">
+                        <img
+                            src="assets/img/me-undies.svg"
+                            alt="Meundies"
+                            class="evaluation__partner-logo"
+                        />
+                        <img
+                            src="assets/img/slack.svg"
+                            alt="Slack"
+                            class="evaluation__partner-logo"
+                        />
+                        <img
+                            src="assets/img/amazon.svg"
+                            alt="Amazon"
+                            class="evaluation__partner-logo"
+                        />
+                        <img
+                            src="assets/img/woo-commerce.svg"
+                            alt="Woocommerce"
+                            class="evaluation__partner-logo"
+                        />
+                        <img
+                            src="assets/img/site-points.svg"
+                            alt="Sitepoints"
+                            class="evaluation__partner-logo"
+                        />
+                    </div>
+                </div>
             </div>
-
-        </header>
-        <div class="content">
-            <!-- <img src="./assets/img/house-illustration.png"> -->
-        </div>
-        <footer class="footer"></footer>
-    </div>
-
-</body>
+            <div class="guides">
+                <div class="contents page-width">
+                    <h2 class="guides__title">How its works?</h2>
+                    <p class="guides__desc">
+                        Everything you need to know when you're looking to buy, <br />
+                        rent, or sell - all in one place.
+                    </p>
+                    <div class="guides__steps">
+                        <div class="guides__step">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="48"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                            >
+                                <path
+                                    d="M47.9469 12.5043L44.7023 27.2131C44.3361 28.875 43.4081 30.3761 42.0897 31.4407C40.7673 32.5085 39.1014 33.0967 37.3993 33.0967C36.364 33.0967 35.5247 32.2573 35.5247 31.222C35.5247 30.1864 36.364 29.3474 37.3993 29.3474C39.1615 29.3474 40.6589 28.1378 41.0413 26.4056L44.2855 11.6968C44.5085 10.6857 45.5087 10.0466 46.5201 10.2697C47.5312 10.4927 48.1699 11.4932 47.9469 12.5043ZM42.9294 42.4698C42.9294 45.5193 40.4487 48 37.3993 48C34.3498 48 31.8691 45.5193 31.8691 42.4698C31.8691 41.8469 31.9742 41.2482 32.165 40.689H24.0747C24.2655 41.2482 24.3706 41.8469 24.3706 42.4698C24.3706 45.5193 21.8895 48 18.8401 48C15.791 48 13.3099 45.5193 13.3099 42.4698C13.3099 41.8469 13.415 41.2482 13.6058 40.689H12.8412C9.74048 40.689 7.21728 38.1661 7.21728 35.0651C7.21728 35.049 7.21948 35.0339 7.21985 35.0182C7.21948 35.0024 7.21728 34.9871 7.21728 34.9713C7.21728 32.6957 8.57666 30.7332 10.5249 29.8484L8.29651 9.37537C7.86621 6.17175 5.10901 3.75842 1.87463 3.75842C0.839355 3.75842 0 2.91907 0 1.88379C0 0.848145 0.839355 0.00915527 1.87463 0.00915527C6.99097 0.00915527 11.3511 3.83459 12.0165 8.90698L12.0212 8.94836L14.2419 29.3474H28.0261C29.0614 29.3474 29.9008 30.1868 29.9008 31.222C29.9008 32.2573 29.0614 33.0967 28.0261 33.0967H12.8412C11.8077 33.0967 10.9666 33.9375 10.9666 34.9713C10.9666 34.9871 10.9647 35.0024 10.9644 35.0182C10.9647 35.0339 10.9666 35.0493 10.9666 35.0651C10.9666 36.0989 11.8077 36.9397 12.8412 36.9397H37.3993C40.4487 36.9397 42.9294 39.4204 42.9294 42.4698ZM18.8401 40.689C17.8583 40.689 17.0592 41.4877 17.0592 42.4698C17.0592 43.452 17.8583 44.2507 18.8401 44.2507C19.8223 44.2507 20.621 43.452 20.621 42.4698C20.621 41.4877 19.8223 40.689 18.8401 40.689ZM39.1802 42.4698C39.1802 41.4877 38.3811 40.689 37.3993 40.689C36.4171 40.689 35.6184 41.4877 35.6184 42.4698C35.6184 43.452 36.4171 44.2507 37.3993 44.2507C38.3811 44.2507 39.1802 43.4517 39.1802 42.4698ZM15.7632 11.9524C15.0685 11.1848 15.1274 9.99939 15.895 9.30469L24.6306 1.39856C26.6741 -0.466187 29.7528 -0.466187 31.7963 1.39856L40.5319 9.30469C41.2994 9.99939 41.3584 11.1848 40.6637 11.9524C40.2938 12.3615 39.7844 12.5691 39.2732 12.5691C38.9147 12.5691 38.5558 12.4651 38.2427 12.2582V17.5983C38.2427 20.5104 35.8751 22.8798 32.9652 22.8798H23.3679C20.458 22.8798 18.0905 20.5104 18.0905 17.5983V12.3175C17.3412 12.7507 16.3671 12.6196 15.7632 11.9524ZM21.8339 8.98645C21.8361 9.02454 21.8397 9.06262 21.8397 9.10107V17.5979C21.8397 18.4431 22.5253 19.1305 23.3679 19.1305H32.9652C33.8079 19.1305 34.4934 18.4431 34.4934 17.5979V9.10107C34.4934 9.03516 34.4971 8.96997 34.5037 8.90588L29.2771 4.17554C29.2749 4.17334 29.2723 4.17114 29.2701 4.16895C28.6677 3.61853 27.7592 3.61853 27.1567 4.16895C27.1545 4.17114 27.1523 4.17334 27.1501 4.17554L21.8339 8.98645Z"
+                                    fill="#3B3C45"
+                                />
+                                <mask
+                                    id="mask0_2_576"
+                                    style="mask-type: alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="0"
+                                    width="48"
+                                    height="48"
+                                >
+                                    <path
+                                        d="M47.9469 12.5043L44.7023 27.2131C44.3361 28.875 43.4081 30.3761 42.0897 31.4407C40.7673 32.5085 39.1014 33.0967 37.3993 33.0967C36.364 33.0967 35.5247 32.2573 35.5247 31.222C35.5247 30.1864 36.364 29.3474 37.3993 29.3474C39.1615 29.3474 40.6589 28.1378 41.0413 26.4056L44.2855 11.6968C44.5085 10.6857 45.5087 10.0466 46.5201 10.2697C47.5312 10.4927 48.1699 11.4932 47.9469 12.5043ZM42.9294 42.4698C42.9294 45.5193 40.4487 48 37.3993 48C34.3498 48 31.8691 45.5193 31.8691 42.4698C31.8691 41.8469 31.9742 41.2482 32.165 40.689H24.0747C24.2655 41.2482 24.3706 41.8469 24.3706 42.4698C24.3706 45.5193 21.8895 48 18.8401 48C15.791 48 13.3099 45.5193 13.3099 42.4698C13.3099 41.8469 13.415 41.2482 13.6058 40.689H12.8412C9.74048 40.689 7.21728 38.1661 7.21728 35.0651C7.21728 35.049 7.21948 35.0339 7.21985 35.0182C7.21948 35.0024 7.21728 34.9871 7.21728 34.9713C7.21728 32.6957 8.57666 30.7332 10.5249 29.8484L8.29651 9.37537C7.86621 6.17175 5.10901 3.75842 1.87463 3.75842C0.839355 3.75842 0 2.91907 0 1.88379C0 0.848145 0.839355 0.00915527 1.87463 0.00915527C6.99097 0.00915527 11.3511 3.83459 12.0165 8.90698L12.0212 8.94836L14.2419 29.3474H28.0261C29.0614 29.3474 29.9008 30.1868 29.9008 31.222C29.9008 32.2573 29.0614 33.0967 28.0261 33.0967H12.8412C11.8077 33.0967 10.9666 33.9375 10.9666 34.9713C10.9666 34.9871 10.9647 35.0024 10.9644 35.0182C10.9647 35.0339 10.9666 35.0493 10.9666 35.0651C10.9666 36.0989 11.8077 36.9397 12.8412 36.9397H37.3993C40.4487 36.9397 42.9294 39.4204 42.9294 42.4698ZM18.8401 40.689C17.8583 40.689 17.0592 41.4877 17.0592 42.4698C17.0592 43.452 17.8583 44.2507 18.8401 44.2507C19.8223 44.2507 20.621 43.452 20.621 42.4698C20.621 41.4877 19.8223 40.689 18.8401 40.689ZM39.1802 42.4698C39.1802 41.4877 38.3811 40.689 37.3993 40.689C36.4171 40.689 35.6184 41.4877 35.6184 42.4698C35.6184 43.452 36.4171 44.2507 37.3993 44.2507C38.3811 44.2507 39.1802 43.4517 39.1802 42.4698ZM15.7632 11.9524C15.0685 11.1848 15.1274 9.99939 15.895 9.30469L24.6306 1.39856C26.6741 -0.466187 29.7528 -0.466187 31.7963 1.39856L40.5319 9.30469C41.2994 9.99939 41.3584 11.1848 40.6637 11.9524C40.2938 12.3615 39.7844 12.5691 39.2732 12.5691C38.9147 12.5691 38.5558 12.4651 38.2427 12.2582V17.5983C38.2427 20.5104 35.8751 22.8798 32.9652 22.8798H23.3679C20.458 22.8798 18.0905 20.5104 18.0905 17.5983V12.3175C17.3412 12.7507 16.3671 12.6196 15.7632 11.9524ZM21.8339 8.98645C21.8361 9.02454 21.8397 9.06262 21.8397 9.10107V17.5979C21.8397 18.4431 22.5253 19.1305 23.3679 19.1305H32.9652C33.8079 19.1305 34.4934 18.4431 34.4934 17.5979V9.10107C34.4934 9.03516 34.4971 8.96997 34.5037 8.90588L29.2771 4.17554C29.2749 4.17334 29.2723 4.17114 29.2701 4.16895C28.6677 3.61853 27.7592 3.61853 27.1567 4.16895C27.1545 4.17114 27.1523 4.17334 27.1501 4.17554L21.8339 8.98645Z"
+                                        fill="#3B3C45"
+                                    />
+                                </mask>
+                                <g mask="url(#mask0_2_576)">
+                                    <rect
+                                        x="15"
+                                        y="-8"
+                                        width="26"
+                                        height="32"
+                                        fill="#F7A804"
+                                    />
+                                </g>
+                            </svg>
+                            <h3 class="guides__step-name">Buyer Guides</h3>
+                            <a
+                                href="#!"
+                                class="guides__step-link"
+                            >
+                                How to buy
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="8"
+                                    viewBox="0 0 24 8"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M21.24 7.68C21.1127 7.84974 20.9232 7.96196 20.7131 7.99196C20.5031 8.02197 20.2897 7.96731 20.12 7.84C19.9503 7.7127 19.838 7.52318 19.808 7.31314C19.778 7.1031 19.8327 6.88974 19.96 6.72L21.4 4.8L0.800001 4.8C0.587827 4.8 0.384344 4.71571 0.234316 4.56569C0.0842855 4.41566 1.72323e-06 4.21217 1.7325e-06 4C1.74178e-06 3.78783 0.0842856 3.58434 0.234316 3.43431C0.384344 3.28429 0.587828 3.2 0.800001 3.2L21.4 3.2L19.96 1.28C19.897 1.19595 19.8511 1.10032 19.825 0.998545C19.799 0.896774 19.7932 0.790864 19.808 0.686863C19.8229 0.582861 19.8581 0.482804 19.9116 0.392405C19.9651 0.302005 20.036 0.223034 20.12 0.16C20.204 0.0969651 20.2997 0.051102 20.4015 0.0250287C20.5032 -0.00104454 20.6091 -0.00681701 20.7131 0.00804037C20.8171 0.0228978 20.9172 0.058094 21.0076 0.11162C21.098 0.165146 21.177 0.235954 21.24 0.32L23.6352 3.5136L23.6456 3.5272L24 4L23.6456 4.472L23.6352 4.4864L21.24 7.68Z"
+                                        fill="#0689FF"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="guides__step">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="48"
+                                viewBox="0 0 48 48"
+                                fill="none"
+                            >
+                                <path
+                                    d="M39.5532 17.7604L24.0003 4.86811L8.44751 17.7604V24.5453H4.69965V20.867L2.39176 22.7805L0 19.8951L24.0003 0L48.0007 19.8951L45.6089 22.7805L43.301 20.867V24.5453H39.5532V17.7604ZM13.6943 47.9685H22.2202V44.2206H17.4418V38.9738H22.2202V35.2263H17.4418V31.4785H22.2202V27.731H13.6943V47.9685ZM38.0543 31.4785H41.1462V47.9685H44.8937V31.4785H47.9857V27.731H38.0543V31.4785ZM8.06664 38.4212L11.3216 47.9685H7.36204L4.29572 38.9742H3.76287V47.9685H0.0150148V27.731H5.6368C8.73645 27.731 11.2582 30.2528 11.2582 33.3524C11.2582 35.5823 9.95302 37.513 8.06664 38.4212ZM3.76287 35.2263H5.6368C6.6699 35.2263 7.51036 34.3855 7.51036 33.3524C7.51036 32.3193 6.6699 31.4785 5.6368 31.4785H3.76287V35.2263ZM31.9641 37.1797L28.5726 27.8409L28.4975 27.868V27.731H24.75V47.9685H28.4975V38.6131L31.8894 47.9523L31.9641 47.9252V47.9685H35.7119V27.731H31.9641V37.1797Z"
+                                    fill="#3B3C45"
+                                />
+                                <mask
+                                    id="mask0_2_553"
+                                    style="mask-type: alpha"
+                                    maskUnits="userSpaceOnUse"
+                                    x="0"
+                                    y="0"
+                                    width="49"
+                                    height="48"
+                                >
+                                    <path
+                                        d="M39.5532 17.7604L24.0003 4.86811L8.44751 17.7604V24.5453H4.69965V20.867L2.39176 22.7805L0 19.8951L24.0003 0L48.0007 19.8951L45.6089 22.7805L43.301 20.867V24.5453H39.5532V17.7604ZM13.6943 47.9685H22.2202V44.2206H17.4418V38.9738H22.2202V35.2263H17.4418V31.4785H22.2202V27.731H13.6943V47.9685ZM38.0543 31.4785H41.1462V47.9685H44.8937V31.4785H47.9857V27.731H38.0543V31.4785ZM8.06664 38.4212L11.3216 47.9685H7.36204L4.29572 38.9742H3.76287V47.9685H0.0150148V27.731H5.6368C8.73645 27.731 11.2582 30.2528 11.2582 33.3524C11.2582 35.5823 9.95302 37.513 8.06664 38.4212ZM3.76287 35.2263H5.6368C6.6699 35.2263 7.51036 34.3855 7.51036 33.3524C7.51036 32.3193 6.6699 31.4785 5.6368 31.4785H3.76287V35.2263ZM31.9641 37.1797L28.5726 27.8409L28.4975 27.868V27.731H24.75V47.9685H28.4975V38.6131L31.8894 47.9523L31.9641 47.9252V47.9685H35.7119V27.731H31.9641V37.1797Z"
+                                        fill="#3B3C45"
+                                    />
+                                </mask>
+                                <g mask="url(#mask0_2_553)">
+                                    <rect
+                                        x="-3.6004"
+                                        y="25.1998"
+                                        width="54.0008"
+                                        height="25.2004"
+                                        fill="#F7A804"
+                                    />
+                                </g>
+                            </svg>
+                            <h3 class="guides__step-name">Renter Guides</h3>
+                            <a
+                                href="#!"
+                                class="guides__step-link"
+                            >
+                                How to rent
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="8"
+                                    viewBox="0 0 24 8"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M21.24 7.68C21.1127 7.84974 20.9232 7.96196 20.7131 7.99196C20.5031 8.02197 20.2897 7.96731 20.12 7.84C19.9503 7.7127 19.838 7.52318 19.808 7.31314C19.778 7.1031 19.8327 6.88974 19.96 6.72L21.4 4.8L0.800001 4.8C0.587827 4.8 0.384344 4.71571 0.234316 4.56569C0.0842855 4.41566 1.72323e-06 4.21217 1.7325e-06 4C1.74178e-06 3.78783 0.0842856 3.58434 0.234316 3.43431C0.384344 3.28429 0.587828 3.2 0.800001 3.2L21.4 3.2L19.96 1.28C19.897 1.19595 19.8511 1.10032 19.825 0.998545C19.799 0.896774 19.7932 0.790864 19.808 0.686863C19.8229 0.582861 19.8581 0.482804 19.9116 0.392405C19.9651 0.302005 20.036 0.223034 20.12 0.16C20.204 0.0969651 20.2997 0.051102 20.4015 0.0250287C20.5032 -0.00104454 20.6091 -0.00681701 20.7131 0.00804037C20.8171 0.0228978 20.9172 0.058094 21.0076 0.11162C21.098 0.165146 21.177 0.235954 21.24 0.32L23.6352 3.5136L23.6456 3.5272L24 4L23.6456 4.472L23.6352 4.4864L21.24 7.68Z"
+                                        fill="#0689FF"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="guides__step">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="49"
+                                viewBox="0 0 48 49"
+                                fill="none"
+                            >
+                                <path
+                                    d="M35 23C27.832 23 22 28.832 22 36C22 43.168 27.832 49 35 49C42.168 49 48 43.168 48 36C48 28.832 42.168 23 35 23ZM34.75 34.5H35.25C37.318 34.5 39 36.182 39 38.25C39 39.876 37.952 41.252 36.5 41.77V42.5C36.5 43.328 35.828 44 35 44C34.172 44 33.5 43.328 33.5 42.5V42H32.5C31.672 42 31 41.328 31 40.5C31 39.672 31.672 39 32.5 39H35.25C35.664 39 36 38.664 36 38.25C36 37.836 35.664 37.5 35.25 37.5H34.75C32.682 37.5 31 35.818 31 33.75C31 32.124 32.048 30.748 33.5 30.23V29.5C33.5 28.672 34.172 28 35 28C35.828 28 36.5 28.672 36.5 29.5V30H37.5C38.328 30 39 30.672 39 31.5C39 32.328 38.328 33 37.5 33H34.75C34.336 33 34 33.336 34 33.75C34 34.164 34.336 34.5 34.75 34.5Z"
+                                    fill="#F7A804"
+                                />
+                                <path
+                                    d="M34 12.916V5.00004C34 3.89404 33.104 3.00004 32 3.00004C30.896 3.00004 30 3.89404 30 5.00004V9.00404L22.398 1.57004C21.62 0.808035 20.378 0.808035 19.602 1.57004L0.878 19.874C0.32 20.438 0 21.212 0 22C0 23.654 1.346 25 3 25H6V36C6 38.758 8.244 41 11 41H16C17.104 41 18 40.106 18 39C18 37.894 17.104 37 16 37H11C10.448 37 10 36.55 10 36V23C10 21.894 9.104 21 8 21H5.446L21 5.79604L34.102 18.608C34.894 19.382 36.158 19.368 36.93 18.576C37.702 17.786 37.688 16.52 36.898 15.748L34 12.916Z"
+                                    fill="#3B3C45"
+                                />
+                            </svg>
+                            <h3 class="guides__step-name">Seller Guides</h3>
+                            <a
+                                href="#!"
+                                class="guides__step-link"
+                            >
+                                How to sell
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="8"
+                                    viewBox="0 0 24 8"
+                                    fill="none"
+                                >
+                                    <path
+                                        d="M21.24 7.68C21.1127 7.84974 20.9232 7.96196 20.7131 7.99196C20.5031 8.02197 20.2897 7.96731 20.12 7.84C19.9503 7.7127 19.838 7.52318 19.808 7.31314C19.778 7.1031 19.8327 6.88974 19.96 6.72L21.4 4.8L0.800001 4.8C0.587827 4.8 0.384344 4.71571 0.234316 4.56569C0.0842855 4.41566 1.72323e-06 4.21217 1.7325e-06 4C1.74178e-06 3.78783 0.0842856 3.58434 0.234316 3.43431C0.384344 3.28429 0.587828 3.2 0.800001 3.2L21.4 3.2L19.96 1.28C19.897 1.19595 19.8511 1.10032 19.825 0.998545C19.799 0.896774 19.7932 0.790864 19.808 0.686863C19.8229 0.582861 19.8581 0.482804 19.9116 0.392405C19.9651 0.302005 20.036 0.223034 20.12 0.16C20.204 0.0969651 20.2997 0.051102 20.4015 0.0250287C20.5032 -0.00104454 20.6091 -0.00681701 20.7131 0.00804037C20.8171 0.0228978 20.9172 0.058094 21.0076 0.11162C21.098 0.165146 21.177 0.235954 21.24 0.32L23.6352 3.5136L23.6456 3.5272L24 4L23.6456 4.472L23.6352 4.4864L21.24 7.68Z"
+                                        fill="#0689FF"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a
+                    href="#!"
+                    class="btn guides__more"
+                    >Sell Full Guidelines</a
+                >
+            </div>
+            <div class="properties">
+                <div class="contents page-width">
+                    <header>
+                        <h2 class="properties__title">Featured Properties</h2>
+                        <div class="row">
+                            <p class="properties__slogan">Everything you need to know when you're looking</p>
+                            <a
+                                href="#!"
+                                class="properties__more"
+                            >
+                                View All Properties
+                                <img
+                                    src="./assets/img/arrow.svg"
+                                    alt="Arrow"
+                                    class="properties__arrow"
+                                />
+                            </a>
+                        </div>
+                    </header>
+                    <div class="properties__list">
+                        <div class="properties__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/feature-1.jpg"
+                                    alt="Nikko Apartment"
+                                    class="properties__item-img"
+                                />
+                            </a>
+                            <div class="properties__item-info">
+                                <h3 class="properties__item-name">
+                                    <a
+                                        href="#!"
+                                        class="line-clamp"
+                                    >
+                                        Nikko Apartments
+                                    </a>
+                                </h3>
+                                <p class="properties__item-desc line-clamp">8502 Preston Rd. Inglewood, Maine 98280</p>
+                                <div class="properties__feature">
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/beds.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">5 Beds</span>
+                                    </div>
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/wc.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">2 both</span>
+                                    </div>
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/area.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">2000 Sqft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/feature-2.jpg"
+                                    alt="CouCou Homestead"
+                                    class="properties__item-img"
+                                />
+                            </a>
+                            <div class="properties__item-info">
+                                <h3 class="properties__item-name"><a href="#!">CouCou Homestead</a></h3>
+                                <p class="properties__item-desc">8502 Preston Rd. Inglewood, Maine 98280</p>
+                                <div class="properties__feature">
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/beds.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">5 Beds</span>
+                                    </div>
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/wc.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">2 both</span>
+                                    </div>
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/area.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">2000 Sqft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="properties__item">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/feature-3.jpg"
+                                    alt="Lavis 18 Residence"
+                                    class="properties__item-img"
+                                />
+                            </a>
+                            <div class="properties__item-info">
+                                <h3 class="properties__item-name"><a href="#!">Lavis 18 Residence</a></h3>
+                                <p class="properties__item-desc">8502 Preston Rd. Inglewood, Maine 98280</p>
+                                <div class="properties__feature">
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/beds.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">5 Beds</span>
+                                    </div>
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/wc.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">2 both</span>
+                                    </div>
+                                    <div class="properties__feature-item">
+                                        <img
+                                            src="./assets/img/area.svg"
+                                            alt="Featured Properties"
+                                            class="properties__feature-icon"
+                                        />
+                                        <span class="properties__feature-type">2000 Sqft</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="achievements">
+                <div class="contents page-width">
+                    <div class="achievements__heading">
+                        <img
+                            src="./assets/img/house-resized.jpg"
+                            alt="House"
+                            class="achievements__heading-img"
+                        />
+                        <div class="achievements__heading-info">
+                            <h2 class="achievements__heading-title">You’ve found a neighborhood you love.</h2>
+                            <p class="achievements__heading-desc">
+                                When you own a home, you’re committing to living in one location for a while. In a
+                                recent Trulia survey, we found that five out of six respondents said finding the right
+                                neighborhood
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="achievements__revenue-quatity">2,500</span>
+                        <span class="achievements__revenue-quatity">5,000+</span>
+                        <span class="achievements__revenue-quatity">170+</span>
+                    </div>
+                    <div class="row">
+                        <p class="achievements__revenue-type">Homes For Sale</p>
+                        <p class="achievements__revenue-type">Homes Recently Sold</p>
+                        <p class="achievements__revenue-type">Price Reduced</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe">
+                <div class="contents page-width">
+                    <h2 class="subscribe__title">Subscribe to our Newsletter!</h2>
+                    <p class="subscribe__desc">Subscribe to our newsletter and stay updated.</p>
+                    <a
+                        href="#!"
+                        class="btn subscribe__btn"
+                        >Subscribe</a
+                    >
+                    <img
+                        src="./assets/img/home-ui.svg"
+                        alt="Home UI in mobile"
+                        class="subscribe__home-ui"
+                    />
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="contents page-width">
+                    <div class="footer__list">
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">Product</h2>
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Listing</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Property</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Agents</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Blog</a
+                            >
+                        </div>
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">Resources</h2>
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Our Homes</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Member Stories</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Video</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Free trial</a
+                            >
+                        </div>
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">Company</h2>
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Patnerships</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Terms of use</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Privacy</a
+                            >
+                            <a
+                                href="#!"
+                                class="footer__item-link"
+                                >Sitemap</a
+                            >
+                        </div>
+                        <div class="footer__item">
+                            <h2 class="footer__item-title">Get in touch</h2>
+                            <p class="footer__item-desc">
+                                You’ll find your next home, in <br />
+                                any style you prefer.
+                            </p>
+                            <a
+                                href="#!"
+                                class="footer__item-social"
+                            >
+                                <i class="icon footer__icon-facebook"></i>
+                            </a>
+                            <a
+                                href="#!"
+                                class="footer__item-social"
+                            >
+                                <i class="icon footer__icon-twitter"></i>
+                            </a>
+                            <a
+                                href="#!"
+                                class="footer__item-social"
+                            >
+                                <i class="icon footer__icon-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img
+                            loading="lazy"
+                            src="./assets/img/logo.svg"
+                            alt="Bensik."
+                            class="logo"
+                        />
+                        <p class="footer__copyright">Copyright 2023.com, All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>

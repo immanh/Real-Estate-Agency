@@ -1,0 +1,87 @@
+:root {
+    --title-color: #000339;
+}
+.guides {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+}
+.guides__title {
+    position: relative;
+    text-align: center;
+    color: var(--title-color);
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.guides__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 41px;
+    height: 4px;
+    border-radius: 12px;
+    background-color: var(--title-color);
+}
+.guides__desc {
+    color: #5a6473;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+    margin-top: 20px;
+}
+
+.guides__steps {
+    margin-top: 70px;
+    display: flex;
+}
+
+.guides__step {
+    margin: auto;
+    text-align: center;
+}
+
+.guides__step-name {
+    color: #3b3c45;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.1; /* 110% */
+    margin-top: 26px;
+}
+
+.guides__step-link {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    color: #0689ff;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.big-arrow {
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 1px;
+}
+
+.guides__more {
+    min-width: 170px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    background: #0f1b4c;
+    margin: 50px auto auto auto;
+    border-radius: 12px;
+    padding: 18.5px 25px;
+    text-decoration: none;
+}
+.guides__more:hover {
+    opacity: 0.9;
+}
