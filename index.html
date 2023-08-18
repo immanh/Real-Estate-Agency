@@ -21,6 +21,18 @@
             rel="stylesheet"
         />
         <link
+            rel="preconnect"
+            href="https://cdnjs.cloudflare.com"
+            crossorigin
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
             rel="stylesheet"
             href="./assets/css/reset.css"
         />
@@ -66,18 +78,23 @@
             <!-- Header -->
             <header class="header">
                 <div class="contents">
-                    <nav class="nav-bar">
-                        <img
-                            src="./assets/img/logo.svg"
-                            alt="Besnik."
-                            class="logo"
-                        />
+                    <nav class="navbar">
+                        <a
+                            href=""
+                            class="navbar__logo-link"
+                        >
+                            <img
+                                src="./assets/img/logo.svg"
+                                alt="Besnik."
+                                class="logo"
+                            />
+                        </a>
                         <ul class="nav">
-                            <li class="nav-item"><a href="#!">Home</a></li>
-                            <li class="nav-item"><a href="#!">Features</a></li>
-                            <li class="nav-item"><a href="#!">Services</a></li>
-                            <li class="nav-item"><a href="#!">Resources</a></li>
-                            <li class="nav-item"><a href="#!">Contact</a></li>
+                            <li class="nav-item"><a href="#">Home</a></li>
+                            <li class="nav-item"><a href="#guides">Features</a></li>
+                            <li class="nav-item"><a href="#properties">Services</a></li>
+                            <li class="nav-item"><a href="#achievements">Resources</a></li>
+                            <li class="nav-item"><a href="#subscription">Contact</a></li>
                         </ul>
                         <div class="auth">
                             <a class="btn">Sign in</a>
@@ -177,7 +194,10 @@
                     </div>
                 </div>
             </div>
-            <div class="guides">
+            <div
+                class="guides"
+                id="guides"
+            >
                 <div class="contents">
                     <h2 class="guides__title">How its works?</h2>
                     <p class="guides__desc">
@@ -342,7 +362,10 @@
                     >Sell Full Guidelines</a
                 >
             </div>
-            <div class="properties">
+            <div
+                class="properties"
+                id="properties"
+            >
                 <div class="contents">
                     <header>
                         <h2 class="properties__title">Featured Properties</h2>
@@ -489,7 +512,10 @@
                     </div>
                 </div>
             </div>
-            <div class="achievements">
+            <div
+                class="achievements"
+                id="achievements"
+            >
                 <div class="contents">
                     <div class="row">
                         <div class="achievements__block-img">
@@ -649,7 +675,10 @@
                     </div>
                 </div>
             </div>
-            <div class="subscription">
+            <div
+                class="subscription"
+                id="subscription"
+            >
                 <div class="contents">
                     <div class="subscription__body">
                         <div class="subscription__info">
@@ -676,109 +705,149 @@
             </div>
             <footer class="footer">
                 <div class="contents">
-                    <div class="footer__list">
-                        <div class="footer__item">
-                            <h2 class="footer__item-title">Product</h2>
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Listing</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Property</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Agents</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Blog</a
-                            >
+                    <div class="row--top">
+                        <div class="footer__column">
+                            <h3 class="footer__column-title">Product</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                    >
+                                        Listing
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Property</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Agents</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Blog</a
+                                    >
+                                </li>
+                            </ul>
                         </div>
-                        <div class="footer__item">
-                            <h2 class="footer__item-title">Resources</h2>
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Our Homes</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Member Stories</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Video</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Free trial</a
-                            >
+                        <div class="footer__column">
+                            <h3 class="footer__column-title">Resources</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Our Homes</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Member Stories</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Video</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Free trial</a
+                                    >
+                                </li>
+                            </ul>
                         </div>
-                        <div class="footer__item">
-                            <h2 class="footer__item-title">Company</h2>
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Patnerships</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Terms of use</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Privacy</a
-                            >
-                            <a
-                                href="#!"
-                                class="footer__item-link"
-                                >Sitemap</a
-                            >
+                        <div class="footer__column">
+                            <h3 class="footer__column-title">Company</h3>
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Patnerships</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Terms of use</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Privacy</a
+                                    >
+                                </li>
+                                <li class="footer__item">
+                                    <a
+                                        href="#!"
+                                        class="footer__item-link"
+                                        >Sitemap</a
+                                    >
+                                </li>
+                            </ul>
                         </div>
-                        <div class="footer__item">
-                            <h2 class="footer__item-title">Get in touch</h2>
-                            <p class="footer__item-desc">
-                                You’ll find your next home, in <br />
-                                any style you prefer.
+                        <div class="footer__column">
+                            <h3 class="footer__column-title">Get in touch</h3>
+                            <p
+                                class="footer__column-desc line-clamp"
+                                style="--line-clamp: 2"
+                            >
+                                You’ll find your next home, in any style you prefer.
                             </p>
-                            <a
-                                href="#!"
-                                class="footer__item-social"
-                            >
-                                <i class="icon footer__icon-facebook"></i>
-                            </a>
-                            <a
-                                href="#!"
-                                class="footer__item-social"
-                            >
-                                <i class="icon footer__icon-twitter"></i>
-                            </a>
-                            <a
-                                href="#!"
-                                class="footer__item-social"
-                            >
-                                <i class="icon footer__icon-linkedin"></i>
-                            </a>
+                            <div class="footer__social">
+                                <a
+                                    href="#!"
+                                    class="footer__social-link"
+                                >
+                                    <i class="footer__social-icon fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a
+                                    href="#!"
+                                    class="footer__social-link"
+                                >
+                                    <i class="footer__social-icon fa-brands fa-twitter"></i>
+                                </a>
+                                <a
+                                    href="#!"
+                                    class="footer__social-link"
+                                >
+                                    <i class="footer__social-icon fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <img
-                            loading="lazy"
-                            src="./assets/img/logo.svg"
-                            alt="Bensik."
-                            class="logo"
-                        />
+                        <a
+                            href="#!"
+                            class="footer__logo-link"
+                        >
+                            <img
+                                loading="lazy"
+                                src="./assets/img/logo.svg"
+                                alt="Bensik."
+                                class="logo"
+                            />
+                        </a>
                         <p class="footer__copyright">Copyright 2023.com, All rights reserved.</p>
                     </div>
                 </div>

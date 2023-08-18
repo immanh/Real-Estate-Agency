@@ -1,4 +1,4 @@
-/* Nav-bar */
+/* navbar */
 
 .header {
     position: relative;
@@ -6,15 +6,14 @@
     height: 100vh;
     padding-top: 38px;
 }
-.nav-bar {
+.navbar {
     display: flex;
     align-items: center;
 }
-.nav-bar .logo {
+.navbar .logo {
     display: inline-block;
     width: 107px;
     height: 24px;
-    cursor: pointer;
 }
 .nav {
     display: flex;
