@@ -1,24 +1,24 @@
-.subscribe .contents {
+.subscription__body {
     position: relative;
     border-radius: 20px;
     background: #063183;
-    padding-left: 80px;
-    margin-top: 101px;
-    min-height: 409px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    margin-top: 51px;
+    height: 409px;
 }
-
-.subscribe__title {
+.subscription__info {
+    padding: 121px 90px 110px 80px;
+    width: 671px;
+    max-width: 100%;
+}
+.subscription__title {
+    word-break: break-all;
     color: #fff;
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 1;
 }
 
-.subscribe__desc {
+.subscription__desc {
     color: #fff;
     font-size: 1.6rem;
     font-weight: 400;
@@ -27,7 +27,7 @@
     margin: 15px 0 20px;
 }
 
-.subscribe__btn {
+.subscription__btn {
     min-width: 151px;
     border-radius: 12px;
     background: #fff;
@@ -38,7 +38,10 @@
     text-decoration: none;
     padding: 18.5px 0;
 }
-.subscribe__home-ui {
+.subscription__btn:hover {
+    background-color: #f5fafe;
+}
+.subscription__home-ui {
     position: absolute;
     bottom: 0;
     left: 61%;

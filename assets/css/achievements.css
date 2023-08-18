@@ -43,13 +43,13 @@
     margin: 0;
 }
 
-.achievements .achievements__trend-value {
+.achievements .trend__value {
     color: #000339;
     font-size: 2.6rem;
     font-weight: 700;
     letter-spacing: 0.026rem;
 }
-.achievements .achievements__trend-desc {
+.achievements .trend__desc {
     margin: 8px 0 26px 0;
     color: #a7a7a7;
     font-size: 1.2rem;
