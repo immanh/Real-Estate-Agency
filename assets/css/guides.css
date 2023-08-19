@@ -65,7 +65,9 @@
     font-weight: 600;
     text-decoration: none;
 }
-
+.guides__step-link:hover {
+    opacity: 0.5;
+}
 .big-arrow {
     position: absolute;
     left: calc(100% + 2px);
