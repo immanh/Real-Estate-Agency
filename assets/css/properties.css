@@ -28,7 +28,7 @@
     text-decoration: none;
 }
 .properties__more:hover {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .properties__arrow {
     margin-left: 3px;
@@ -64,7 +64,9 @@
     font-weight: 600;
     line-height: 1.4;
 }
-
+.properties__item-name a:hover {
+    opacity: 0.8;
+}
 .properties__item-desc {
     --line-clamp: 2;
     color: #a3a6ab;
