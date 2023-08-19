@@ -46,6 +46,9 @@
 .auth__sign-up:hover {
     opacity: 0.9;
 }
+.auth__sign-in:hover {
+    text-decoration: underline;
+}
 /* introduce */
 .introduce {
     position: relative;
@@ -95,8 +98,4 @@
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
-    /* width: 584px;
-    height: 620px;
-    margin-left: 67px;
-    margin-top: 49px; */
 }
