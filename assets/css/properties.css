@@ -27,6 +27,9 @@
     font-weight: 600;
     text-decoration: none;
 }
+.properties__more:hover {
+    opacity: 0.5;
+}
 .properties__arrow {
     margin-left: 3px;
 }
