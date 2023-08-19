@@ -74,35 +74,39 @@
         />
     </head>
     <body>
-        <main class="app">
-            <!-- Header -->
-            <header class="header">
+        <!-- Header -->
+        <header class="header-top">
+            <div class="contents">
+                <nav class="navbar">
+                    <a
+                        href="#!"
+                        class="navbar__logo-link"
+                    >
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="Besnik."
+                            class="logo"
+                        />
+                    </a>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#guides">Features</a></li>
+                        <li class="nav-item"><a href="#properties">Services</a></li>
+                        <li class="nav-item"><a href="#achievements">Resources</a></li>
+                        <li class="nav-item"><a href="#subscription">Contact</a></li>
+                    </ul>
+                    <div class="auth">
+                        <a class="btn">Sign in</a>
+                        <a class="btn auth__sign-up">Sign up</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="introduce-wrap">
                 <div class="contents">
-                    <nav class="navbar">
-                        <a
-                            href=""
-                            class="navbar__logo-link"
-                        >
-                            <img
-                                src="./assets/img/logo.svg"
-                                alt="Besnik."
-                                class="logo"
-                            />
-                        </a>
-                        <ul class="nav">
-                            <li class="nav-item"><a href="#">Home</a></li>
-                            <li class="nav-item"><a href="#guides">Features</a></li>
-                            <li class="nav-item"><a href="#properties">Services</a></li>
-                            <li class="nav-item"><a href="#achievements">Resources</a></li>
-                            <li class="nav-item"><a href="#subscription">Contact</a></li>
-                        </ul>
-                        <div class="auth">
-                            <a class="btn">Sign in</a>
-                            <a class="btn auth__sign-up">Sign up</a>
-                        </div>
-                    </nav>
-                    <div class="header-content">
-                        <div class="introduce">
+                    <div class="introduce">
+                        <div class="introduce__info">
                             <p class="introduce__welcome">Welcome to Besnik Agency</p>
                             <h1 class="introduce__title">Discover a place you'll love to live.</h1>
                             <p class="introduce__description">
@@ -118,7 +122,8 @@
                         />
                     </div>
                 </div>
-            </header>
+            </div>
+
             <div class="clients">
                 <div class="contents">
                     <div class="evaluation">

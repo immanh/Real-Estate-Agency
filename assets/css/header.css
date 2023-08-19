@@ -1,14 +1,18 @@
 /* navbar */
 
-.header {
-    position: relative;
+.header-top {
+    position: sticky;
+    top: -26px;
+    padding-top: 26px;
     background-color: #e6f0ff;
-    height: 100vh;
-    padding-top: 38px;
+    z-index: 1;
 }
+
 .navbar {
     display: flex;
     align-items: center;
+    padding: 12px 0;
+    background-color: red;
 }
 .navbar .logo {
     display: inline-block;
@@ -17,7 +21,6 @@
 }
 .nav {
     display: flex;
-    /* width: 406px; */
     margin-left: 50px;
 }
 .nav-item a {
@@ -44,15 +47,18 @@
 .auth__sign-up:hover {
     opacity: 0.9;
 }
-/* Header-content */
-.header-content {
+/* introduce */
+.introduce-wrap {
+    position: relative;
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
     display: flex;
+    flex-direction: column;
 }
 .introduce {
     margin-top: 130px;
-    width: 559px;
-    height: 371px;
-    flex-shrink: 0;
+}
+.introduce__info {
     width: 51%;
 }
 .introduce__welcome {
@@ -87,7 +93,7 @@
 .introduce__more:hover {
     opacity: 0.9;
 }
-.header-content .house-image {
+.introduce .house-image {
     position: absolute;
     bottom: 0;
     right: calc((100vw - 1110px) / 2 - 100px);
