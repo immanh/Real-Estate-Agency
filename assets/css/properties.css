@@ -7,7 +7,7 @@
     margin-top: 15px;
 }
 .properties__title {
-    color: #000339;
+    color: var(--title-color);
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 1;
@@ -59,7 +59,7 @@
 }
 
 .properties__item-name a {
-    color: #000339;
+    color: var(--title-color);
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.4;

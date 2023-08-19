@@ -17,6 +17,9 @@ a {
 }
 
 /* Common */
+:root {
+    --title-color: #000339;
+}
 .contents {
     width: 1110px;
     max-width: calc(100% - 48px);
