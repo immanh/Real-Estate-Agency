@@ -19,6 +19,7 @@ a {
 /* Common */
 :root {
     --title-color: #000339;
+    --header-top-height: 90px;
 }
 .contents {
     width: 1110px;

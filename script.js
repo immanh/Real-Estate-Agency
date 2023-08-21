@@ -30,12 +30,11 @@ closeBtn.onclick = () => {
 }
 // console.log(body.clientWidth);
 navItems.forEach((navItem) => {
-    console.log(navItem)
+    // console.log(window.innerWidth)
 
     navItem.onclick = () => {
         console.log(navItem)
         overlay.classList.remove("open");
-        toggleMenu.style.display = "inline-block";
         closeBtn.style.display = "none";
         drawerMenu.style.display = "none";
     }

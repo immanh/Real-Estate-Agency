@@ -37,6 +37,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    /* =====Overlay====== */
     .overlay {
         position: fixed;
         inset: 4% 0 0 0;
@@ -78,11 +79,33 @@
         padding: 14px 0;
         font-weight: 600;
     }
+    /* ======Introduce====== */
+
+    .introduce__info {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .show-on-mobile {
         display: none;
+    }
+    .introduce {
+        --header-top-height: 64px;
+
+        justify-content: flex-start;
+    }
+    .introduce__info {
+        margin-top: 15px;
+    }
+    .introduce__description {
+        margin-bottom: 20px;
+    }
+    .introduce .house-image {
+        right: 50%;
+        transform: translateX(50%);
     }
 }
 
@@ -96,5 +119,8 @@
     }
     .overlay {
         inset: 1.9% 0 0 0;
+    }
+    .introduce .house-image {
+        display: none;
     }
 }
