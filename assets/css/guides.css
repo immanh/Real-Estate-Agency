@@ -70,18 +70,20 @@
     left: calc(100% + 2px);
     top: 1px;
 }
-
 .guides__more {
+    text-align: center;
+    margin-top: 50px;
+}
+.guides__more-btn {
     min-width: 170px;
     font-size: 1.3rem;
     font-weight: 500;
     color: #fff;
     background: #0f1b4c;
-    margin: 50px auto auto auto;
     border-radius: 12px;
     padding: 18.5px 25px;
     text-decoration: none;
 }
-.guides__more:hover {
+.gguides__more-btn:hover {
     opacity: 0.9;
 }

@@ -130,7 +130,6 @@
     }
     .introduce {
         --header-top-height: 64px;
-
         justify-content: flex-start;
     }
     .introduce__info {
@@ -143,20 +142,101 @@
         right: 50%;
         transform: translateX(50%);
     }
+    .properties__feature {
+        column-gap: 22px;
+        justify-content: flex-start;
+    }
 }
 
 /* Mobile */
 @media screen and (max-width: 767.98px) {
+    :root {
+        --header-top-height: 40px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
     .auth {
         display: none;
     }
     .drawer-menu {
-        top: 4%;
+        top: var(--header-top-height);
     }
     .overlay {
-        inset: 4% 0 0 0;
+        inset: var(--header-top-height) 0 0 0;
+    }
+    .introduce__info {
+        width: 100%;
     }
     .introduce .house-image {
         display: none;
+    }
+    .introduce__title {
+        font-size: 4.4rem;
+        margin: 14px 0 30px;
+    }
+    .guides__steps {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .guides__more {
+        margin-top: 60px;
+    }
+    .properties__more {
+        display: none;
+    }
+    .properties__view-all {
+        min-width: 170px;
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #fff;
+        background: #0f1b4c;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+        padding: 18.5px 25px;
+        text-decoration: none;
+    }
+    .btn {
+        width: 100%;
+    }
+    .achievements .achievements__block-img {
+        margin-top: 40px;
+    }
+    .achievements .achievements__img,
+    .achievements .achievements__title {
+        width: 100%;
+    }
+    .achievements .achievements__trend {
+        display: none;
+    }
+    .achievements__row-bottom {
+        flex-direction: column;
+    }
+    .achievements__revenue {
+        margin-top: 50px;
+    }
+    .subscription__body {
+        height: auto;
+    }
+    .subscription__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 32px;
+    }
+    .subscription__title {
+        font-size: 3.1rem;
+    }
+    .footer__row-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .footer .row {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
     }
 }

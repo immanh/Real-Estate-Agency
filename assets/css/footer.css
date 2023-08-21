@@ -2,7 +2,7 @@
     margin-top: 55px;
     padding: 50px 0 58px;
 }
-.footer .contents .row--top {
+.footer__row-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
