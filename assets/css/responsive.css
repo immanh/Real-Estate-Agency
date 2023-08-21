@@ -80,11 +80,19 @@
         font-weight: 600;
     }
     /* ======Introduce====== */
-
     .introduce__info {
         width: 75%;
         margin: 0 auto;
         text-align: center;
+    }
+    /* =====Evaluation===== */
+    .evaluation__partner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* ======Properties====== */
+    .properties__list {
+        flex-direction: column;
     }
 }
 /* Tablet */

@@ -44,7 +44,6 @@
     margin-top: 70px;
     border-radius: 12px;
     background-color: #fff;
-    width: calc((100% - 60px) / 3);
 }
 
 .properties__item-img {
